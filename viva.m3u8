@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=2000000
+#EXTVLCOPT:http-referer=https://vsc-apidev.helizones.com/
+https://sport-data-global.b-cdn.net/live/844a3846506cf1f60f544ac8476ac479/playlist.m3u8
