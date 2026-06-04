@@ -1,4 +1,6 @@
-Timor Leste vs Indonesia | https://stream.yultech.online/hls/live/sd-6Mwe5TJFdyig2U8qSu/index.m3u8
+07:00 Czech vs Guatemala | https://live.666666.zip/live/4541824.m3u8
+07:00 Czech vs Guatemala | https://stream.yultech.online/hls/live/sd-6Mwe5HbhV7U9sAyMBb/index.m3u8
+09:00 Mexico vs Serbia | https://live.666666.zip/live/4512488.m3u8
 TVONE | https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8
 MOJI | https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8
 TRANS 7 | https://video.detik.com/trans7/smil:trans7.smil/chunklist.m3u8
