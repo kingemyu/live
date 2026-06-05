@@ -1,7 +1,6 @@
 18:30 Singapore vs China | https://live.666666.zip/live/4539878.m3u8
 19:00 Hong Kong vs Mongolia | https://stream.yultech.online/hls/live/sd-6Mwe5ZteYTL6XzEx7P/index.m3u8
 19:30 Thailand vs Kuwait | https://stream.yultech.online/hls/live/sd-6Mwe5ZteYR8cfWR2xV/index.m3u8
-20:00 Indonesia vs Oman | https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
 20:00 Indonesia vs Oman | https://stream.yultech.online/hls/live/sd-6Mwe5ZteYVXaQU4sGH/index.m3u8
 20:00 Singapore vs Thailand | https://stream.yultech.online/hls/live/sd-6Mwe5TJFeCuZFM6LNH/index.m3u8
 20:00 Colombia vs China | https://stream.yultech.online/hls/live/sd-6MwdaddzQUAbiUsC3f/index.m3u8
