@@ -3,6 +3,10 @@ TVONE | https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8
 MOJI | https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8
 TRANS 7 | https://video.detik.com/trans7/smil:trans7.smil/chunklist.m3u8
 TRANS TV | https://video.detik.com/transtv/smil:transtv.smil/chunklist.m3u8
+GTV | https://rctiplus.vercel.app/api?url=https://r-plus.sedotcw3.workers.dev/index.m3u8?id=gtv
+INEWS | https://rctiplus.vercel.app/api?url=https://r-plus.sedotcw3.workers.dev/index.m3u8?id=inews
+RCTI | https://rctiplus.vercel.app/api?url=https://r-plus.sedotcw3.workers.dev/index.m3u8?id=rcti
+MNCTV | https://rctiplus.vercel.app/api?url=https://r-plus.sedotcw3.workers.dev/index.m3u8?id=mnctv
 METRO TV | https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 KOMPAS TV | https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8
 MAGNA TV | https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8
@@ -18,15 +22,15 @@ RRI NET | https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9
 MUSIC INFORMATION CHANNEL | https://mic.siar.us/mic/live/playlist.m3u8
 MY CINEMA EUROPE | https://op-group1-swiftservehd-1.dens.tv/h/h18/index.m3u8
 AXN | https://indihuy.streamized.net/atm/DASH/axn/manifest.mpd
-Cinemax | https://indihuy.streamized.net/atm/DASH/cinemax/manifest.mpd
-HBO Family | https://indihuy.streamized.net/atm/DASH/hbofamily/manifest.mpd
-HBO Hits | https://indihuy.streamized.net/atm/DASH/hbohits/manifest.mpd
-HBO Signature | https://indihuy.streamized.net/atm/DASH/hbosignature/manifest.mpd
+CINEMAX | https://indihuy.streamized.net/atm/DASH/cinemax/manifest.mpd
+HBO FAMILY | https://indihuy.streamized.net/atm/DASH/hbofamily/manifest.mpd
+HBO HITS | https://indihuy.streamized.net/atm/DASH/hbohits/manifest.mpd
+HBO SIGNATURE | https://indihuy.streamized.net/atm/DASH/hbosignature/manifest.mpd
 HBO | https://indihuy.streamized.net/atm/DASH/hbo/manifest.mpd
-HITS Movies | https://indihuy.streamized.net/atm/DASH/hitsmovie/manifest.mpd
-K Plus | https://indihuy.streamized.net/atm/DASH/kplus/manifest.mpd
+HITS MOVIES | https://indihuy.streamized.net/atm/DASH/hitsmovie/manifest.mpd
+K PLUS | https://indihuy.streamized.net/atm/DASH/kplus/manifest.mpd
 KiX | https://indihuy.streamized.net/atm/DASH/kix/manifest.mpd
-Rock Action | https://indihuy.streamized.net/atm/DASH/ROCK_ACTION/manifest.mpd
-Rock Entertainment | https://indihuy.streamized.net/atm/DASH/rock_entertainment/manifest.mpd
-Thrill | https://indihuy.streamized.net/atm/DASH/thrill/manifest.mpd
-Warner | https://indihuy.streamized.net/atm/DASH/warner/manifest.mpd
+ROCK ACTION | https://indihuy.streamized.net/atm/DASH/ROCK_ACTION/manifest.mpd
+ROCK ENTERTAINMENT | https://indihuy.streamized.net/atm/DASH/rock_entertainment/manifest.mpd
+THRILL | https://indihuy.streamized.net/atm/DASH/thrill/manifest.mpd
+WARNER | https://indihuy.streamized.net/atm/DASH/warner/manifest.mpd
