@@ -1,20 +1,20 @@
-12/06 02:00 Mexico vs South Africa | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-12/06 09:00 Korea Republic vs Czech Republic | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-13/06 02:00 Canada vs Bosnia and Herzegovina | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-13/06 08:00 USA vs Paraguay | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-14/06 02:00 Qatar vs Switzerland | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-14/06 05:00 Brazil vs Morocco | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-14/06 08:00 Haiti vs Scotland | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-14/06 11:00 Australia vs Turkey | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-15/06 00:00 Germany vs Curaçao | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-15/06 03:00 Netherlands vs Japan | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-15/06 06:00 Côte d'Ivoire vs Ecuador | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-15/06 09:00 Sweden vs Tunisia | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-15/06 23:00 Spain vs Cape Verde Islands | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-16/06 02:00 Belgium vs Egypt | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-16/06 05:00 Saudi Arabia vs Uruguay | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-16/06 08:00 Iran vs New Zealand | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-17/06 02:00 France vs Senegal | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-17/06 05:00 Iraq vs Norway | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-17/06 08:00 Argentina vs Algeria | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-17/06 11:00 Austria vs Jordan | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+12/06 02:00 WIB Mexico vs South Africa | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+12/06 09:00 WIB Korea Republic vs Czech Republic | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+13/06 02:00 WIB Canada vs Bosnia and Herzegovina | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+13/06 08:00 WIB USA vs Paraguay | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+14/06 02:00 WIB Qatar vs Switzerland | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+14/06 05:00 WIB Brazil vs Morocco | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+14/06 08:00 WIB Haiti vs Scotland | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+14/06 11:00 WIB Australia vs Turkey | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+15/06 00:00 WIB Germany vs Curaçao | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+15/06 03:00 WIB Netherlands vs Japan | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+15/06 06:00 WIB Côte d'Ivoire vs Ecuador | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+15/06 09:00 WIB Sweden vs Tunisia | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+15/06 23:00 WIB Spain vs Cape Verde Islands | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+16/06 02:00 WIB Belgium vs Egypt | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+16/06 05:00 WIB Saudi Arabia vs Uruguay | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+16/06 08:00 WIB Iran vs New Zealand | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+17/06 02:00 WIB France vs Senegal | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+17/06 05:00 WIB Iraq vs Norway | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+17/06 08:00 WIB Argentina vs Algeria | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+17/06 11:00 WIB Austria vs Jordan | https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
