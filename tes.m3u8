@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=2000000
+##EXTVLCOPT:http-referer=https://vsc-apidev.helizones.com/
+http://103.58.160.157:8278/720-ANTV/playlist.m3u8
