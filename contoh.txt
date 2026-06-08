@@ -1,0 +1,168 @@
+{
+  "NO_REFERRER_DOMAINS": [
+    "op-group1-swiftservehd-1.dens",
+    "video.detik",
+    "live.cnbcindonesia",
+    "live.cnnindonesia",
+    "edge.medcom"
+  ],
+
+  "FLV": {
+    "channel6": "https://live2.pro2cdnlive.com/live/channel6.flv",
+    "channel7": "https://example.com/live/channel7.flv"
+  },
+
+  "HLS": {
+    "metro": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
+    "trans7": "https://video.detik.com/trans7/smil:trans7.smil/chunklist.m3u8",
+    "transtv": "https://video.detik.com/transtv/smil:transtv.smil/chunklist.m3u8",
+    "tvone": "https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8",
+    "tvri": "https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8",
+    "tvrisport": "https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8",
+    "btv": "https://op-group1-swiftservehd-1.dens.tv/h/h210/index.m3u8",
+    "cnbc": "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/playlist.m3u8",
+    "cnn": "https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8",
+    "garuda": "https://hgmtv.com:19360/garudatvlivestreaming/480p.m3u8",
+    "indonesiana": "https://tvstreamcast.com/indonesiana.m3u8",
+    "jak": "https://op-group1-swiftservesd-1.dens.tv/s/s123/index2.m3u8",
+    "kompas": "https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8",
+    "magna": "https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8",
+    "mdtv": "https://op-group1-swiftservesd-1.dens.tv/h/h06/index.m3u8",
+    "moji": "https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8",
+    "ntv": "https://op-group1-swiftservehd-1.dens.tv/h/h37/index.m3u8",
+    "rri": "https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9fca0a54a_output_0.m3u8",
+    "rtv": "https://op-group1-swiftservehd-1.dens.tv/h/h10/index.m3u8",
+    "jowo": "https://op-group1-swiftservehd-1.dens.tv/h/h77/index.m3u8",
+    "daai": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8",
+    "mic": "https://mic.siar.us/mic/live/playlist.m3u8",
+    "": ""
+  },
+
+  "DASH": {
+    "axn": "https://indihuy.streamized.net/atm/DASH/axn/manifest.mpd",
+    "cinemax": "https://indihuy.streamized.net/atm/DASH/cinemax/manifest.mpd",
+    "hbofamily": "https://indihuy.streamized.net/atm/DASH/hbofamily/manifest.mpd",
+    "hbohits": "https://indihuy.streamized.net/atm/DASH/hbohits/manifest.mpd",
+    "hbosignature": "https://indihuy.streamized.net/atm/DASH/hbosignature/manifest.mpd",
+    "hbo": "https://indihuy.streamized.net/atm/DASH/hbo/manifest.mpd",
+    "hitsmovie": "https://indihuy.streamized.net/atm/DASH/hitsmovie/manifest.mpd",
+    "kplus": "https://indihuy.streamized.net/atm/DASH/kplus/manifest.mpd",
+    "kix": "https://indihuy.streamized.net/atm/DASH/kix/manifest.mpd",
+    "rockact": "https://indihuy.streamized.net/atm/DASH/ROCK_ACTION/manifest.mpd",
+    "rockent": "https://indihuy.streamized.net/atm/DASH/rock_entertainment/manifest.mpd",
+    "thrill": "https://indihuy.streamized.net/atm/DASH/thrill/manifest.mpd",
+    "warner": "https://indihuy.streamized.net/atm/DASH/warner/manifest.mpd",
+    "sctv": "https://indihuy.streamized.net/atm/DASH/sctv/manifest.mpd",
+    "indosiar": "https://indihuy.streamized.net/atm/DASH/indosiar/manifest.mpd",
+    "gtv": "https://indihuy.streamized.net/atm/DASH/globaltv/manifest.mpd",
+    "mnc": "https://indihuy.streamized.net/atm/DASH/mnctv/manifest.mpd",
+    "rcti": "https://indihuy.streamized.net/atm/DASH/rcti/manifest.mpd",
+    "inews": "https://indihuy.streamized.net/atm/DASH/inews/manifest.mpd",
+    "disco": "https://indihuy.streamized.net/atm/DASH/disco/manifest.mpd",
+    "jawapos": "https://indihuy.streamized.net/atm/DASH/jawapos/manifest.mpd",
+    "rtv": "https://indihuy.streamized.net/atm/DASH/RAJAWALI_TV/manifest.mpd",
+    "allplay": "https://indihuy.streamized.net/atm/DASH/useeprime/manifest.mpd",
+    "maxeats": "https://indihuy.streamized.net/atm/DASH/maxeats/manifest.mpd",
+    "maxstreak": "https://indihuy.streamized.net/atm/DASH/maxstreak/manifest.mpd",
+    "zbioskop": "https://indihuy.streamized.net/atm/DASH/zbioskop/manifest.mpd",
+    "": ""
+  },
+
+  "ClearKey": {
+    "soccer": {
+      "url": "https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd",
+      "clearkey": "4035323a7fe64767ab8f3345ed9b93be:67377b8d429603f8bf30c161bda269e5"
+    }
+    "ss1": {
+      "url": "https://d2tjypxxy769fn.cloudfront.net/out/v1/89a6e4261cd7470f83e5869e90440cff/index.mpd",
+      "clearkey": "39c4dc6704cf4ceea2fd4863b88d8a7d:4e9d7954c2ff46759289da4fc9f018ea"
+    }
+    "ss2": {
+      "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/d2c68a3dfb644808b416bd90dcc92d5f/index.mpd",
+      "clearkey": "911e72adf36946afbdbb4f80782a8394:08aec548a851ba64b7172ae7f05cb91c"
+    }
+    "ss4": {
+      "url": "https://d2xz2v5wuvgur6.cloudfront.net/out/v1/2fcc58ccec8c45e9aa094fb980eb642d/index.mpd",
+      "clearkey": "b576e5f5f1bc4cbaa866e5b0face5a30:3377be6c3b5f688ebed687312c9b9d95"
+    },
+    "tsn1": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/7janu55dwc/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+      "clearkey": "e51aa21f2a0fef9aabc120dfb655b52f:a12a987fe725a40b6be95cd84b15f689"
+    },
+    "tsn2": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3n6slkgh54/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
+      "clearkey": "daa8ea92553fd16cd6bfae2b8c582715:4042e041b5639b79b69ae07a872eef9b"
+    },
+    "tsn3": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lzhmuzmjsl/out/v1/c171eeb214c749f2b351c79df317b21e/cenc.mpd",
+      "clearkey": "f5c2b30eac11be1e8cdfc9585f5fe6af:a8198d17bf9b0da77450fbb919a38b2d"
+    },
+    "tsn4": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
+      "clearkey": "c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003"
+    },
+    "tsn5": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/jkcljgqbx8/out/v1/63bfa701559340f3a2a2cb1fccd24807/cenc.mpd",
+      "clearkey": "e853333da2c9196ea11374634231bc45:de2e2dbe818d78dfad07d6cd9a4c63d4"
+    },
+    "bein1": {
+      "url": "https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+      "clearkey": "335dad778109954503dcbb21dc92015f:24bfd75d436cbf73168a2a2dccd40281"
+    },
+    "bein2": {
+      "url": "https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+      "clearkey": "0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8"
+    },
+    "bein3": {
+      "url": "https://a122aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+      "clearkey": "7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e"
+    },
+    "spotv": {
+      "url": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd",
+      "clearkey": "ec7ee27d83764e4b845c48cca31c8eef:9c0e4191203fccb0fde34ee29999129e"
+    },
+    "spotv2": {
+      "url": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd",
+      "clearkey": "7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed"
+    },
+    "spotvnow": {
+      "url": "https://slive.mana2.my/SpotvNow/index.mpd",
+      "clearkey": "3dd653fc7aa1e3075b7f0233620df68f:8573791fa55bff03a3094ff559fc1407"
+    },
+    "euro1": {
+      "url": "https://dash2.antik.sk/stream/nvidia_eurosport1/playlist_cenc.mpd",
+      "clearkey": "11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d"
+    },
+    "euro2": {
+      "url": "https://dash2.antik.sk/stream/nvidia_eurosport2/playlist_cenc.mpd",
+      "clearkey": "11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d"
+    },
+    "cbs": {
+      "url": "https://otte.live.fly.ww.aiv-cdn.net/PDX/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
+      "clearkey": "d9623774ac5c8c351aafe97c5fe70267:5164e6d05164a2d65fa8fcc962aa4861"
+    },
+    "fubo": {
+      "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3b7qwiqzk3/out/v1/9f14895badca43e6a716db021dcd0c31/cenc.mpd",
+      "clearkey": "dc69b6159a0f9f0a4e03b3ff91cbacd5:d0dcbcd7723bc40df0bf34c9c092d51f"
+    },
+    "premier1": {
+      "url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd",
+      "clearkey": "1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f"
+    },
+    "premier2": {
+      "url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
+      "clearkey": "1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19"
+    },
+    "": {
+      "url": "",
+      "clearkey": ""
+    }
+  },
+
+  "Widevine": {
+    "mychannel": {
+      "url": "",
+      "license": ""
+    }
+  }
+}
