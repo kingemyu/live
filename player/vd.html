@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Universal Player</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.13.5/controls.min.css">
+
+<style>
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:#000;
+}
+
+.video-container{
+    width:100%;
+    height:100%;
+}
+
+video{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#000;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container" data-shaka-player-container>
+    <video id="video"
+           autoplay
+           controls
+           playsinline
+           data-shaka-player>
+    </video>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.13.5/shaka-player.compiled.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest/dist/mpegts.min.js"></script>
+
+<script>
+const params = new URLSearchParams(location.search);
+const streamUrl = params.get("url");
+
+if (!streamUrl) {
+    document.body.innerHTML =
+        "<h2 style='color:white;text-align:center'>Parameter url tidak ditemukan</h2>";
+    throw new Error("Missing url");
+}
+
+const video = document.getElementById("video");
+
+async function initShaka(url) {
+    shaka.polyfill.installAll();
+
+    if (!shaka.Player.isBrowserSupported()) {
+        alert("Browser tidak mendukung Shaka Player");
+        return;
+    }
+
+    const player = new shaka.Player(video);
+
+    player.addEventListener("error", e => {
+        console.error("Shaka Error:", e.detail);
+    });
+
+    try {
+        await player.load(url);
+        console.log("Loaded:", url);
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+function initFlv(url) {
+    if (!mpegts.getFeatureList().mseLivePlayback) {
+        alert("FLV tidak didukung browser ini");
+        return;
+    }
+
+    const flvPlayer = mpegts.createPlayer({
+        type: "flv",
+        url: url,
+        isLive: true
+    });
+
+    flvPlayer.attachMediaElement(video);
+    flvPlayer.load();
+    flvPlayer.play();
+}
+
+function getExtension(url) {
+    try {
+        const pathname = new URL(url).pathname;
+        return pathname.split(".").pop().toLowerCase();
+    } catch {
+        return "";
+    }
+}
+
+const ext = getExtension(streamUrl);
+
+if (ext === "flv") {
+    initFlv(streamUrl);
+} else {
+    initShaka(streamUrl);
+}
+</script>
+
+</body>
+</html>
