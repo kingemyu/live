@@ -1,2 +1,8 @@
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-12/06/2026 09:00 WIB\nKorea Republic vs Czech Republic|https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
+09/06/3036 18:30 WIB\nMyanmar vs Thailand|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4549870.m3u8
+09/06/3036 18:30 WIB\nPhilippines vs Myanmar|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544841.m3u8
+09/06/3036 19:00 WIB\nOman vs Kuwait|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544881.m3u8
+09/06/3036 19:00 WIB\nEthiopia vs Malawi|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544903.m3u8
+09/06/3036 19:00 WIB\nAngola vs Central Africa|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544888.m3u8
+09/06/3036 21:30 WIB\nKyrgyzstan vs Palestine|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544848.m3u8
+12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+12/06/2026 09:00 WIB\nKorea Republic vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
