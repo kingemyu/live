@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://kltraid.pages.dev/css/index.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>KING EMYU</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="min-h-full flex-h-center" id="background_div">
+    <input type="hidden" value="https://bio.link" id="app-url">
+    <input type="hidden" value="null" id="is-featured">
+
+    <canvas id="bg-canvas" class="background-overlay"></canvas>
+
+    <div class="mt-48 page-full-wrap relative">
+
+        <input type="hidden" value="creator-page" id="page-type">
+
+        <img
+            class="display-image m-auto"
+            src="https://assets.football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png"
+        >
+
+        <h2 class="page-title page-text-color page-text-font mt-16 text-center">
+            KING EMYU
+        </h2>
+
+        <!-- Daftar pertandingan akan dimuat otomatis dari TXT -->
+        <div class="mt-24" id="match-list"></div>
+
+    </div>
+</div>
+
+<script>
+const TXT_URL = "https://raw.githubusercontent.com/kingemyu/live/main/pildun.txt";
+
+fetch(TXT_URL)
+    .then(response => response.text())
+    .then(text => {
+
+        const container = document.getElementById("match-list");
+
+        const lines = text
+            .split(/\r?\n/)
+            .map(line => line.trim())
+            .filter(line => line !== "");
+
+        lines.forEach(line => {
+
+            const parts = line.split("|");
+
+            if (parts.length < 2) return;
+
+            const title = parts[0].trim();
+            const url = parts[1].trim();
+
+            const displayText = title.replace(/\\n/g, "<br>");
+
+            container.insertAdjacentHTML("beforeend", `
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+
+                    <a
+                        class="page-item-each py-10 flex-both-center"
+                        href="${url}"
+                        data-type="page_item"
+                    >
+                        <span style="width:90%" class="text-center">
+                            ${displayText}
+                        </span>
+                    </a>
+                </div>
+            `);
+
+        });
+
+    })
+    .catch(error => {
+        console.error(error);
+
+        document.getElementById("match-list").innerHTML = `
+            <div class="page-item-wrap relative">
+                <div class="page-item flex-both-center absolute"></div>
+
+                <div class="page-item-each py-10 flex-both-center">
+                    <span class="text-center">
+                        Belum ada jadwal
+                    </span>
+                </div>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>
