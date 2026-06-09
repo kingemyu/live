@@ -1,7 +1,5 @@
-09/06/3036 20:00 WIB\nIndonesia vs Mozambique|https://kingemyu.github.io/live/player/vd.html?url=https://live05.msdht.app/live/14707124.m3u8
-09/06/3036 20:00 WIB\nIndonesia vs Mozambique|https://kingemyu.github.io/live/player/vd.html?url=https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
-09/06/3036 20:00 WIB\nIndonesia vs Mozambique|https://kingemyu.github.io/live/player/vd.html?url=https://hls.cdnfaster-a.live/live/VANCONAN/index.m3u8
-09/06/3036 20:00 WIB\nIndonesia vs Mozambique|https://kingemyu.github.io/live/player/vd.html?url=https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8
-09/06/3036 20:00 WIB\nIndonesia vs Mozambique|https://kingemyu.github.io/live/player/vd.html?url=https://yallavoide.yalla-shoot-zhubo.com/sport/202_5450309_1.m3u8
+10/06/3036 06:00 WIB\nSaudi Arabia vs Senegal|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4541797.m3u8
+10/06/3036 08:00 WIB\nArgentina vs Iceland|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4529486.m3u8
+10/06/3036 08:00 WIB\nIraq vs Venezuela|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4544907.m3u8
 12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
 12/06/2026 09:00 WIB\nKorea Republic vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
