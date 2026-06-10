@@ -1,65 +1,72 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Universal Player</title>
 
-<body>
-<div class='embed-responsive embed-responsive-16by9' id='asint'>
-<div class='embed-responsive-item'>
-<iframe id="iframe" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen="allowfullscreen" allowtransparency="true" frameborder="0" height="100%" marginheight="0" marginwidth="0" src width="100%"></iframe> 
-</div>
-    
-</div>
-  
-<div id="jwPlayer"></div>
-<div id="jwplayers"></div>
-<script>
-    // Get the `src` parameter from the URL.
-    const urlParams = new URLSearchParams(window.location.search);
-    const srcParam = urlParams.get('url');
-    const videoUrl = urlParams.get('url');
-    
-    if (srcParam) {
-      // Show the iframe player
-      document.getElementById('iframe').src = srcParam;
-      document.getElementById('jwPlayer').style.display = 'none';
-    } else if (videoUrl) {
-      // Show the JW Player
-      jwplayer("jwPlayer").setup({
-        file: videoUrl,
-      });
-      document.getElementById('iframe').style.display = 'none';
-    }
-  </script> 
-    
-</div>
- 
 <style>
-  body {
+  html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     background: black;
-    height: 100vh;
     overflow: hidden;
   }
 
-  .embed-responsive {
+  /* PLAYER FULL SCREEN */
+  .player {
+    position: fixed;
+    inset: 0;
+    background: black;
+    overflow: hidden;
+  }
+
+  /* IFRAME CENTER + RESPONSIVE TV STYLE */
+  .player iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 16:9 scaling */
     width: 100vw;
-    height: 100vh;
+    height: 56.25vw;
+
+    /* ensure full height coverage */
+    min-width: 177.78vh;
+    min-height: 100vh;
+
+    border: none;
   }
 
-  .embed-responsive-item {
-    width: 100%;
-    height: 100%;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  /* OPTIONAL: disable outline when focus */
+  iframe:focus {
+    outline: none;
   }
 </style>
-    </div>
-  
+</head>
+
+<body>
+
+<div class="player">
+  <iframe id="iframe" allowfullscreen></iframe>
+</div>
+
+<script>
+  // ambil parameter ?url=
+  const urlParams = new URLSearchParams(window.location.search);
+  const srcParam = urlParams.get('url');
+
+  const iframe = document.getElementById('iframe');
+
+  if (srcParam) {
+    iframe.src = srcParam;
+  } else {
+    // fallback kalau tidak ada url
+    document.body.innerHTML = "<div style='color:white;text-align:center;padding-top:40vh'>No video URL</div>";
+  }
+</script>
+
 </body>
 </html>
