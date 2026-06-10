@@ -39,40 +39,23 @@
   body {
     margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-  }
-
-  .embed-responsive {
-    width: 100vw;
-    height: 100vh;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .embed-responsive-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .player-wrapper {
+    height: 100vh;              /* FULL tinggi layar */
+    aspect-ratio: 16 / 9;       /* lebar mengikuti tinggi */
+    max-width: 100vw;           /* jangan overflow layar */
   }
 
   iframe {
-    width: auto;
-    height: 100%;
-    max-width: auto;
-    max-height: 100vh;
-    border: 0;
-    object-fit: contain; /* tidak selalu bekerja di iframe, tapi tetap ditaruh */
-  }
-
-  #jwPlayer {
     width: 100%;
     height: 100%;
+    border: 0;
+    display: block;
   }
 </style>
     </div>
