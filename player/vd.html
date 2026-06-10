@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
 
 <title>Universal Player</title>
 
@@ -82,6 +81,39 @@ video{
 const params = new URLSearchParams(window.location.search);
 const streamUrl = params.get("url");
 
+/** Domain yang butuh no-referrer */
+const NO_REFERRER_DOMAINS = [
+    'op-group1-swiftservehd-1.dens',
+    'video.detik',
+    'live.cnbcindonesia',
+    'live.cnnindonesia'
+];
+
+/** Inject meta no-referrer bila domain cocok */
+function maybeInjectNoReferrerMeta(url) {
+
+    if (!url) return;
+
+    const need = NO_REFERRER_DOMAINS.some(domain =>
+        url.toLowerCase().includes(domain.toLowerCase())
+    );
+
+    if (!need) return;
+
+    // Hindari inject berulang
+    if (document.querySelector('meta[name="referrer"]')) {
+        return;
+    }
+
+    const meta = document.createElement('meta');
+    meta.name = 'referrer';
+    meta.content = 'no-referrer';
+
+    document.head.appendChild(meta);
+
+    console.log('No-referrer meta injected for:', url);
+}
+
 if (!streamUrl) {
     document.body.innerHTML = `
         <div style="
@@ -101,6 +133,9 @@ if (!streamUrl) {
     `;
     throw new Error("Missing URL parameter");
 }
+
+/* Panggil sebelum player dibuat */
+maybeInjectNoReferrerMeta(streamUrl);
 
 const video = document.getElementById("video");
 const unmuteBtn = document.getElementById("unmuteBtn");
@@ -163,11 +198,20 @@ function initFlv(url) {
         return;
     }
 
-    const flvPlayer = mpegts.createPlayer({
-        type: "flv",
-        url: url,
-        isLive: true
-    });
+    const flvPlayer = mpegts.createPlayer(
+        {
+            type: "flv",
+            url: url,
+            isLive: true
+        },
+        {
+            enableWorker: true,
+            lazyLoad: false,
+            liveBufferLatencyChasing: true,
+            liveBufferLatencyMaxLatency: 5,
+            liveBufferLatencyMinRemain: 1
+        }
+    );
 
     flvPlayer.attachMediaElement(video);
     flvPlayer.load();
@@ -177,6 +221,7 @@ function initFlv(url) {
 }
 
 function isFlv(url) {
+
     const lower = url.toLowerCase();
 
     return (
