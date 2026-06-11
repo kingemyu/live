@@ -1,13 +1,5 @@
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/ck.html?url=https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s/Live/channel(WSNS)/master.mpd!!7d6bb9f86e133e4cb33440b493b6b672:584ad285dcb9e7d42cf3e93f1cc3fe11
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4459820.m3u8
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://live12.xiazhix1.top/live/12871538.m3u8
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://live12.xiazhix1.top/live/13212901.m3u8
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://live05.msdht.app/live/97312754.m3u8
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/player/match/phanma.html
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/player/match/phanquay.html
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/player/match/thanthong.html
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/player/match/luongbong.html
+12/06/2026 09:00 WIB\nSouth Korea vs Czech Republic|https://kingemyu.github.io/live/player/ck.html?url=https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s/Live/channel(WSNS)/master.mpd!!7d6bb9f86e133e4cb33440b493b6b672:584ad285dcb9e7d42cf3e93f1cc3fe11
+12/06/2026 09:00 WIB\nSouth Korea vs Czech Republic|https://kingemyu.github.io/live/player/ck.html?url=https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lzhmuzmjsl/out/v1/c171eeb214c749f2b351c79df317b21e/cenc.mpd!!f5c2b30eac11be1e8cdfc9585f5fe6af:a8198d17bf9b0da77450fbb919a38b2d
 12/06/2026 09:00 WIB\nSouth Korea vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://live.666666.zip/live/4460938.m3u8
 12/06/2026 09:00 WIB\nSouth Korea vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
 12/06/2026 09:00 WIB\nSouth Korea vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://hqlive.yarncdn.live/live/hqtv_blv_phanquay/playlist.m3u8
