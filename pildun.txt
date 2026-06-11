@@ -1,8 +1,4 @@
-SATHIO GROUP Australian Badminton Open 2026|https://kingemyu.github.io/live/player/vd.html?url=https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8
-SATHIO GROUP Australian Badminton Open 2026|https://kingemyu.github.io/live/player/vd.html?url=https://hqlive.yarncdn.live/live/hqtv_blv_phanchuot/playlist.m3u8
-10/06/3036 08:00 WIB\nArgentina vs Iceland|https://kingemyu.github.io/live/player/vd.html?url=https://live05.msdht.app/live/24561735.m3u8
-10/06/3036 08:00 WIB\nArgentina vs Iceland|https://kingemyu.github.io/live/player/vd.html?url=https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
-10/06/3036 08:00 WIB\nIraq vs Venezuela|https://kingemyu.github.io/live/player/vd.html?url=https://live05.msdht.app/live/19919577.m3u8
-10/06/3036 08:00 WIB\nIraq vs Venezuela|https://kingemyu.github.io/live/player/vd.html?url=https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8
-12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
-12/06/2026 09:00 WIB\nKorea Republic vs Czech Republic|https://kingemyu.github.io/live/player/vd.html?url=https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
+11/06/3036 20:15 WIB\nIndonesia vs Australia|https://kingemyu.github.io/player/match/idau.html
+11/06/3036 20:15 WIB\nIndonesia vs Australia|https://kingemyu.github.io/player/match/idau2.html
+12/06/2026 02:00 WIB\nMexico vs South Africa|https://kingemyu.github.io/player/tvrid.html
+12/06/2026 09:00 WIB\nKorea Republic vs Czech Republic|https://kingemyu.github.io/player/tvrisportd.html
