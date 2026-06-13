@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>Universal Player</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.13.5/controls.min.css">
+
+<style>
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+}
+
+.video-container{
+    width:100%;
+    height:100%;
+}
+
+video{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#000;
+}
+
+#unmuteBtn{
+    position:fixed;
+    top:15px;
+    right:15px;
+    z-index:9999;
+
+    background:rgba(0,0,0,.8);
+    color:#fff;
+    border:none;
+    border-radius:999px;
+
+    padding:10px 16px;
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+    box-shadow:0 4px 15px rgba(0,0,0,.4);
+}
+
+#unmuteBtn:hover{
+    background:rgba(0,0,0,.95);
+}
+
+.hidden{
+    display:none !important;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container" data-shaka-player-container>
+    <video
+        id="video"
+        autoplay
+        muted
+        controls
+        playsinline
+        data-shaka-player>
+    </video>
+</div>
+
+<button id="unmuteBtn">🔊 Unmute</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.13.5/shaka-player.compiled.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest/dist/mpegts.min.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const streamUrl = params.get("url");
+
+/** Domain yang butuh no-referrer */
+const NO_REFERRER_DOMAINS = [
+    'op-group1-swiftservehd-1.dens',
+    'video.detik',
+    'live.cnbcindonesia',
+    'live.cnnindonesia'
+];
+
+/** Inject meta no-referrer bila domain cocok */
+function maybeInjectNoReferrerMeta(url) {
+
+    if (!url) return;
+
+    const need = NO_REFERRER_DOMAINS.some(domain =>
+        url.toLowerCase().includes(domain.toLowerCase())
+    );
+
+    if (!need) return;
+
+    // Hindari inject berulang
+    if (document.querySelector('meta[name="referrer"]')) {
+        return;
+    }
+
+    const meta = document.createElement('meta');
+    meta.name = 'referrer';
+    meta.content = 'no-referrer';
+
+    document.head.appendChild(meta);
+
+    console.log('No-referrer meta injected for:', url);
+}
+
+if (!streamUrl) {
+    document.body.innerHTML = `
+        <div style="
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+            font-family:sans-serif;
+            text-align:center;
+            padding:20px;
+        ">
+            Parameter URL tidak ditemukan.<br><br>
+            Contoh:<br>
+            ?url=https://example.com/live.m3u8
+        </div>
+    `;
+    throw new Error("Missing URL parameter");
+}
+
+/* Panggil sebelum player dibuat */
+maybeInjectNoReferrerMeta(streamUrl);
+
+const video = document.getElementById("video");
+const unmuteBtn = document.getElementById("unmuteBtn");
+
+function updateUnmuteButton() {
+    if (video.muted || video.volume === 0) {
+        unmuteBtn.classList.remove("hidden");
+    } else {
+        unmuteBtn.classList.add("hidden");
+    }
+}
+
+unmuteBtn.addEventListener("click", async () => {
+    try {
+        video.muted = false;
+        video.volume = 1;
+
+        await video.play();
+
+        updateUnmuteButton();
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+video.addEventListener("volumechange", updateUnmuteButton);
+video.addEventListener("play", updateUnmuteButton);
+
+async function initShaka(url) {
+
+    shaka.polyfill.installAll();
+
+    if (!shaka.Player.isBrowserSupported()) {
+        alert("Browser tidak mendukung Shaka Player");
+        return;
+    }
+
+    const player = new shaka.Player(video);
+
+    player.addEventListener("error", (event) => {
+        console.error("Shaka Error:", event.detail);
+    });
+
+    try {
+        await player.load(url);
+
+        console.log("Loaded:", url);
+
+        updateUnmuteButton();
+
+    } catch (error) {
+        console.error("Load Error:", error);
+    }
+}
+
+function initFlv(url) {
+
+    if (!mpegts.isSupported()) {
+        alert("FLV tidak didukung browser ini");
+        return;
+    }
+
+    const flvPlayer = mpegts.createPlayer(
+        {
+            type: "flv",
+            url: url,
+            isLive: true
+        },
+        {
+            enableWorker: true,
+            lazyLoad: false,
+            liveBufferLatencyChasing: true,
+            liveBufferLatencyMaxLatency: 5,
+            liveBufferLatencyMinRemain: 1
+        }
+    );
+
+    flvPlayer.attachMediaElement(video);
+    flvPlayer.load();
+    flvPlayer.play();
+
+    updateUnmuteButton();
+}
+
+function isFlv(url) {
+
+    const lower = url.toLowerCase();
+
+    return (
+        lower.includes(".flv") ||
+        lower.includes("format=flv") ||
+        lower.includes("type=flv")
+    );
+}
+
+if (isFlv(streamUrl)) {
+    initFlv(streamUrl);
+} else {
+    initShaka(streamUrl);
+}
+</script>
+
+</body>
+</html>
