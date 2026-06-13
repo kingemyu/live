@@ -1,11 +1,5 @@
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/bpk.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/tlmd.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/tsn1.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/match/666.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/match/phanma.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/match/luongbong.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/match/phanquay.html
-13/06/2026 08:00 WIB\nUSA vs Paraguay|https://kingemyu.github.io/player/match/thanthong.html
+13/06/2026 16:00 WIB\nKamboja U19 vs Indonesia U19|https://kingemyu.github.io/player/match/phanquay.html
+13/06/2026 20:15 WIB\nThailand U19 vs Australia U19|https://kingemyu.github.io/player/match/phanma.html
 14/06/2026 02:00 WIB\nQatar vs Switzerland|https://kingemyu.github.io/player/match/luongbong.html
 14/06/2026 02:00 WIB\nQatar vs Switzerland|https://kingemyu.github.io/player/match/thanthong.html
 14/06/2026 05:00 WIB\nBrazil vs Morocco|https://kingemyu.github.io/player/match/phanma.html
@@ -16,16 +10,11 @@
 14/06/2026 11:00 WIB\nAustralia vs Turkiye|https://kingemyu.github.io/player/match/luongbong.html
 15/06/2026 00:00 WIB\nGermany vs Curaçao|https://kingemyu.github.io/player/match/phanquay.html
 15/06/2026 00:00 WIB\nGermany vs Curaçao|https://kingemyu.github.io/player/match/phanma.html
-15/06/2026 00:00 WIB\nGermany vs Curaçao|https://kingemyu.github.io/player/match/phanchop.html
 15/06/2026 03:00 WIB\nNetherlands vs Japan|https://kingemyu.github.io/player/match/phanchop.html
 15/06/2026 03:00 WIB\nNetherlands vs Japan|https://kingemyu.github.io/player/match/phanma.html
 15/06/2026 06:00 WIB\nIvory Coast vs Ecuador|https://kingemyu.github.io/player/match/luongbong.html
 15/06/2026 06:00 WIB\nIvory Coast vs Ecuador|https://kingemyu.github.io/player/match/thanthong.html
-15/06/2026 06:00 WIB\nIvory Coast vs Ecuador|https://kingemyu.github.io/player/match/phanca.html
 15/06/2026 09:00 WIB\nSweden vs Tunisia|https://kingemyu.github.io/player/match/phanchop.html
 15/06/2026 09:00 WIB\nSweden vs Tunisia|https://kingemyu.github.io/player/match/taogia.html
-15/06/2026 09:00 WIB\nSweden vs Tunisia|https://kingemyu.github.io/player/match/luongbong.html
 15/06/2026 23:00 WIB\nSpain vs Cape Verde Islands|https://kingemyu.github.io/player/match/phanma.html
 15/06/2026 23:00 WIB\nSpain vs Cape Verde Islands|https://kingemyu.github.io/player/match/thanthong.html
-15/06/2026 23:00 WIB\nSpain vs Cape Verde Islands|https://kingemyu.github.io/player/match/phanchop.html
-15/06/2026 23:00 WIB\nSpain vs Cape Verde Islands|https://kingemyu.github.io/player/match/luongbong.html
