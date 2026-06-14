@@ -217,6 +217,12 @@ body{
                 CH10
             </button>
 
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch11',this)">
+                CH11
+            </button>
+
         </div>
 
     </div>
@@ -310,6 +316,11 @@ const streams = {
     },
 
     ch10:{
+        type:"hls",
+        url:"https://d1211whpimeups.cloudfront.net/smil:rtbgo/chunklist.m3u8"
+    },
+
+    ch11:{
         type:"hls",
         url:"https://live.666666.zip/live/4460914.m3u8"
     }
