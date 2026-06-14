@@ -2,3 +2,6 @@
 15/06/2026 03:00 WIB\nNetherlands vs Japan|https://kingemyu.github.io/live/m/nljp.html
 15/06/2026 06:00 WIB\nIvory Coast vs Ecuador|https://kingemyu.github.io/live/m/ciec.html
 15/06/2026 09:00 WIB\nSweden vs Tunisia|https://kingemyu.github.io/live/m/setn.html
+16/06/2026 02:00 WIB\nBelgium vs Egypt|https://kingemyu.github.io/live/m/beeg.html
+16/06/2026 05:00 WIB\nSaudi Arabia vs Uruguay|https://kingemyu.github.io/live/m/sauy.html
+16/06/2026 08:00 WIB\nIran vs New Zealand|https://kingemyu.github.io/live/m/irnz.html
