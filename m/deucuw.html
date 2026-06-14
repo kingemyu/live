@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>KING EMYU</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.9.11/shaka-player.compiled.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest/dist/mpegts.min.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fb;
+    font-family:Roboto,sans-serif;
+    color:#111827;
+}
+
+.container{
+    height:100%;
+    width:100%;
+    max-width:950px;
+    margin:auto;
+    padding:20px;
+}
+
+.player-box{
+    width:100%;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+/* HEADER */
+
+.header{
+    padding:20px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.title{
+    font-size:22px;
+    font-weight:700;
+    text-align: center;
+}
+
+/* VIDEO AREA */
+
+.video-area{
+    width:100%;
+    background:#fff;
+}
+
+/* VIDEO */
+
+.video-wrapper{
+    width:100%;
+    height:73vh;
+    margin:auto;
+}
+
+.video-wrapper video{
+    width:100%;
+    height:100%;
+    background:#fff;
+    display:block;
+    object-fit:contain;
+}
+
+/* CHANNEL BUTTON */
+
+.channel-list{
+    width:100%;
+    padding:10px;
+    padding-left:20px;
+    background:#fff;
+    border-top:1px solid #e5e7eb;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.channel-btn{
+    border:1px solid #d1d5db;
+    background:#fff;
+    color:#374151;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.channel-btn:hover{
+    background:#f3f4f6;
+}
+
+.channel-btn.active{
+    background:#2563eb;
+    color:#fff;
+    border-color:#2563eb;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.video-wrapper{
+    width:100%;
+    height:60vh;
+    margin:auto;
+}
+
+@media(max-width:600px){
+
+.video-wrapper{
+    width:100%;
+    height:45vh;
+    margin:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="player-box">
+
+        <div class="header">
+            <div class="title">Germany vs Curaçao</div>
+
+        </div>
+
+        <div class="video-area">
+
+            <div class="video-wrapper">
+                <video
+                    id="video"
+                    controls
+                    autoplay
+                    playsinline>
+                </video>
+            </div>
+
+        </div>
+
+        <div class="channel-list">
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch1',this)">
+                CH1
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch2',this)">
+                CH2
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch3',this)">
+                CH3
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch4',this)">
+                CH4
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch5',this)">
+                CH5
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch6',this)">
+                CH6
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch7',this)">
+                CH7
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch8',this)">
+                CH8
+            </button>
+
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch9',this)">
+                CH9
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const video = document.getElementById("video");
+
+let shakaPlayer = null;
+let flvPlayer = null;
+
+const streams = {
+
+    ch1:{
+        type:"dash-clearkey",
+        url:"https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/ch299/default/index.mpd",
+        keys:{
+            "549ab7cd35a64bb6bb479ecead04d69d":
+            "829799ed534d11fcadeb4b192467e050"
+        }
+    },
+
+    ch2:{
+        type:"dash-clearkey",
+        url:"https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s/Live/channel(WSNS)/master.mpd",
+        keys:{
+            "7d6bb9f86e133e4cb33440b493b6b672":
+            "584ad285dcb9e7d42cf3e93f1cc3fe11"
+        }
+    },
+
+    ch3:{
+        type:"dash-clearkey",
+        url:"https://c9851ec-rbm-hilv-fsly.cdn.redbee.live/L26/6b640fa2/a765d074.isml/.mpd",
+        keys:{
+            "adca25b8779e4168a0cd710f59f61ccf":
+            "be5383ed3cd8079f4ffe78ad067f476a"
+        }
+    },
+
+    ch4:{
+        type:"dash-clearkey",
+        url:"https://dash2.antik.sk/stream/nvidia_joj_sport/playlist_cenc.mpd",
+        keys:{
+            "11223344556677889900112233445566":
+            "4b80724d0ef86bcb2c21f7999d67739d"
+        }
+    },
+
+    ch5:{
+        type:"dash-clearkey",
+        url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/ubehitlwzo/out/v1/8e09c381a51f4366a19e979418112e8f/cenc.mpd",
+        keys:{
+            "a7d11d37a1f7611ee88d4db880171f32":
+            "68f96d618b0b956b008c445896a25a79"
+        }
+    },
+
+    ch6:{
+        type:"dash-clearkey",
+        url:"https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd",
+        keys:{
+            "11223344556677889900112233445566":
+            "4b80724d0ef86bcb2c21f7999d67739d"
+        }
+    },
+
+    ch7:{
+        type:"dash-clearkey",
+        url:"https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd",
+        keys:{
+            "433ffba670963e70857859a9dff4be04":
+            "51ede3a821229fe81e71282c8eff80e3"
+        }
+    },
+
+    ch8:{
+        type:"dash",
+        url:"https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd"
+    }
+
+    ch9:{
+        type:"hls",
+        url:"https://live.666666.zip/live/4460914.m3u8"
+    }
+
+};
+
+async function destroyPlayers(){
+
+    if(flvPlayer){
+        flvPlayer.destroy();
+        flvPlayer = null;
+    }
+
+    if(shakaPlayer){
+        await shakaPlayer.destroy();
+        shakaPlayer = null;
+    }
+}
+
+async function loadStream(name, btn){
+
+    document.querySelectorAll(".channel-btn")
+    .forEach(el => el.classList.remove("active"));
+
+    btn.classList.add("active");
+
+    await destroyPlayers();
+
+    const stream = streams[name];
+
+    try{
+
+        if(stream.type==="hls" || stream.type==="dash"){
+
+            shakaPlayer = new shaka.Player(video);
+            await shakaPlayer.load(stream.url);
+
+        }
+
+        else if(stream.type==="dash-clearkey"){
+
+            shakaPlayer = new shaka.Player(video);
+
+            shakaPlayer.configure({
+                drm:{
+                    clearKeys:stream.keys
+                }
+            });
+
+            await shakaPlayer.load(stream.url);
+
+        }
+
+        else if(stream.type==="flv"){
+
+            if(mpegts.isSupported()){
+
+                flvPlayer = mpegts.createPlayer({
+                    type:"flv",
+                    url:stream.url
+                });
+
+                flvPlayer.attachMediaElement(video);
+                flvPlayer.load();
+                flvPlayer.play();
+            }
+        }
+
+    }catch(error){
+
+        console.error(error);
+
+    }
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+    if(!shaka.Player.isBrowserSupported()){
+        alert("Browser tidak mendukung Shaka Player");
+        return;
+    }
+
+    loadStream(
+        "hls1",
+        document.querySelector(".channel-btn")
+    );
+
+});
+
+</script>
+
+</body>
+</html>
