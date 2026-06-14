@@ -292,7 +292,7 @@ const streams = {
     ch8:{
         type:"dash",
         url:"https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd"
-    }
+    },
 
     ch9:{
         type:"hls",
@@ -306,7 +306,7 @@ async function destroyPlayers(){
     if(flvPlayer){
         flvPlayer.destroy();
         flvPlayer = null;
-    },
+    }
 
     if(shakaPlayer){
         await shakaPlayer.destroy();
