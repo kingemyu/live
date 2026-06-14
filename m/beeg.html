@@ -253,6 +253,12 @@ body{
                 CH16
             </button>
 
+            <button
+                class="channel-btn"
+                onclick="loadStream('ch17',this)">
+                CH17
+            </button>
+
         </div>
 
     </div>
@@ -297,6 +303,15 @@ const streams = {
 
     ch4:{
         type:"dash-clearkey",
+        url:"https://daiconnect.com/live/dash/rtbf/tipik-56dfkkh-0epa3m40q/.mpd",
+        keys:{
+            "3c736e5c8f5a4d1a8eb8af1e63aa2005":
+            "d1729111efdfb7727ee3e6fcbc7586e1"
+        }
+    },
+
+    ch5:{
+        type:"dash-clearkey",
         url:"https://dash2.antik.sk/stream/nvidia_joj_sport/playlist_cenc.mpd",
         keys:{
             "11223344556677889900112233445566":
@@ -304,7 +319,7 @@ const streams = {
         }
     },
 
-    ch5:{
+    ch6:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/ubehitlwzo/out/v1/8e09c381a51f4366a19e979418112e8f/cenc.mpd",
         keys:{
@@ -313,7 +328,7 @@ const streams = {
         }
     },
 
-    ch6:{
+    ch7:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hubonmgf5k/out/v1/10560d92577e4917973aa4624124ecd6/cenc-sd.mpd",
         keys:{
@@ -322,7 +337,7 @@ const streams = {
         }
     },
 
-    ch7:{
+    ch8:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hufm7lgnhx/out/v1/5045630288d44123ba85427b2c36f29f/cenc-sd.mpd",
         keys:{
@@ -331,7 +346,7 @@ const streams = {
         }
     },
 
-    ch8:{
+    ch9:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/kp7qfx2tly/out/v1/bbfb730b45b74d4ea875d75786ea3f13/cenc-sd.mpd",
         keys:{
@@ -340,7 +355,7 @@ const streams = {
         }
     },
 
-    ch9:{
+    ch10:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/epg9sw6owc/out/v1/e50aecefcb294fae85d6b343e0a6f1cc/cenc.mpd",
         keys:{
@@ -349,7 +364,7 @@ const streams = {
         }
     },
 
-    ch10:{
+    ch11:{
         type:"dash-clearkey",
         url:"https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd",
         keys:{
@@ -358,7 +373,7 @@ const streams = {
         }
     },
 
-    ch11:{
+    ch12:{
         type:"dash-clearkey",
         url:"https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd",
         keys:{
@@ -367,7 +382,7 @@ const streams = {
         }
     },
 
-    ch12:{
+    ch13:{
         type:"dash-clearkey",
         url:"https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd",
         keys:{
@@ -376,7 +391,7 @@ const streams = {
         }
     },
 
-    ch13:{
+    ch14:{
         type:"dash-clearkey",
         url:"https://cors-proxy.cooks.fyi/https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/tmpzbbdj9y/out/v1/962736723a534ba294e7592fef49827b/cenc.mpd",
         keys:{
@@ -385,17 +400,17 @@ const streams = {
         }
     },
 
-    ch14:{
+    ch15:{
         type:"dash",
         url:"https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd"
     },
 
-    ch15:{
+    ch16:{
         type:"hls",
         url:"https://d1211whpimeups.cloudfront.net/smil:rtbgo/chunklist.m3u8"
     },
 
-    ch16:{
+    ch17:{
         type:"hls",
         url:"https://live.666666.zip/live/4460914.m3u8"
     }
